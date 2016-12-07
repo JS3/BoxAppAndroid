@@ -1,0 +1,66 @@
+[{
+	"peso": 0.1,
+	"nombre": "ipod",
+	"origen": "Bogota",
+	"destino": "Miami"
+}, {
+	"peso": 0.5,
+	"nombre": "ipad",
+	"origen": "Miami",
+	"destino": "Bogota"
+}, {
+	"peso": 0.4,
+	"nombre": "teclado",
+	"origen": "Bogota",
+	"destino": "Miami"
+}, {
+	"peso": 0.4,
+	"nombre": "mouse",
+	"origen": "Miami",
+	"destino": "Bogota"
+}, {
+	"peso": 0.5,
+	"nombre": "cama",
+	"origen": "Bogota",
+	"destino": "Miami"
+}, {
+	"peso": 0.6,
+	"nombre": "ducha",
+	"origen": "Miami",
+	"destino": "Bogota"
+}, {
+	"peso": 0.7,
+	"nombre": "telefono",
+	"origen": "Bogota",
+	"destino": "Miami"
+}, {
+	"peso": 0.8,
+	"nombre": "cpu",
+	"origen": "Miami",
+	"destino": "Bogota"
+}, {
+	"peso": 0.9,
+	"nombre": "trim",
+	"origen": "Bogota",
+	"destino": "Miami"
+}, {
+	"peso": 0.1,
+	"nombre": "jejej",
+	"origen": "Miami",
+	"destino": "Bogota"
+}, {
+	"peso": 0.1,
+	"nombre": "false",
+	"origen": "Bogota",
+	"destino": "Miami"
+}, {
+	"peso": 0.2,
+	"nombre": "refrigerador",
+	"origen": "Miami",
+	"destino": "Bogota"
+}, {
+	"peso": 0.3,
+	"nombre": "puerta",
+	"origen": "Bogota",
+	"destino": "Miami"
+}]
