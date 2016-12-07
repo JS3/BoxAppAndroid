@@ -38,7 +38,7 @@ public class Producto
         return nombre;
     }
 
-    public String getnombre()
+    public String getOrigen()
     {
         return origen;
     }

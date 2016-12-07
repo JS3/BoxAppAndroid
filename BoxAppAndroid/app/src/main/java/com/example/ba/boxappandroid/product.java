@@ -28,5 +28,17 @@ public class product extends Activity {
             }
         });
 
+        Button bm4 = (Button) findViewById(R.id.btnRegister);
+
+        bm4.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), list.class);
+                startActivity(i);
+
+            }
+        });
+
     }
 }

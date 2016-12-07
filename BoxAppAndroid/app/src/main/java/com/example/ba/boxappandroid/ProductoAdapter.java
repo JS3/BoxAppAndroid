@@ -40,7 +40,7 @@ public class ProductoAdapter
     public void onBindViewHolder(ViewHolder viewHolder, int position) {
         Producto team = producto.get(position);
         viewHolder.name.setText(team.getName());
-        viewHolder.shortName.setText(team.getnombre());
+        viewHolder.shortName.setText(team.getdestino());
 
     }
 
