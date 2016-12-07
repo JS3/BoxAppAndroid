@@ -32,7 +32,7 @@ public class Network
     public Network()
     {
         Retrofit retrofit = new Retrofit.Builder().baseUrl(
-                "https://raw.githubusercontent.com/JS3/BoxAppAndroid/master/BoxAppAndroid/productos.json" ).
+                "https://raw.githubusercontent.com/JS3/BoxAppAndroid/master/BoxAppAndroid" ).
                 addConverterFactory(GsonConverterFactory.create() ).build();
         service = retrofit.create( ProductService.class );
     }

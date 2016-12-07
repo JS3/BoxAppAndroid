@@ -56,13 +56,13 @@ public class ProductoAdapter
 
         TextView shortName;
 
-        ImageView logo;
+
 
         ViewHolder(View view) {
             super(view);
             name = (TextView) view.findViewById(R.id.name);
             shortName = (TextView) view.findViewById(R.id.shortName);
-            logo = (ImageView) view.findViewById(R.id.logo);
+
         }
     }
 }
