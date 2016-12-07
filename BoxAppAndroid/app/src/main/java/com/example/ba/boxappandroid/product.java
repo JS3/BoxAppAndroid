@@ -39,6 +39,17 @@ public class product extends Activity {
 
             }
         });
+        Button bm5 = (Button) findViewById(R.id.btnimagen);
+
+        bm5.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), ImagenActivity.class);
+                startActivity(i);
+
+            }
+        });
 
     }
 }

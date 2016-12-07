@@ -86,13 +86,19 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dip"
                 android:text="Ingresar localizacion"
-                android:background="@color/colorPrimary"/>/>
+                android:background="@color/colorPrimary"/>
+            <Button android:id="@+id/btnimagen"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="Ingresar Imagen)"
+                android:background="@color/colorPrimary"/>
             <Button android:id="@+id/btnRegister"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dip"
                 android:text="Ingresar producto"
-                android:background="@color/colorPrimary"/>/>
+                android:background="@color/colorPrimary"/>
 
 
 
