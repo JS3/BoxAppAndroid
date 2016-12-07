@@ -6,7 +6,7 @@
     android:fillViewport="true">
     <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" android:background="#ffffff">
+        android:layout_height="wrap_content" android:background="@android:color/holo_green_light">>
 
         <!--  Header  Starts-->
         <LinearLayout android:id="@+id/header"
@@ -60,7 +60,8 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dip"
-                android:text="Login"/>
+                android:text="Login"
+                android:background="@color/colorPrimary"/>
             <!-- Link to Registration Screen -->
             <TextView android:id="@+id/link_to_register"
                 android:layout_width="fill_parent"
@@ -70,7 +71,8 @@
                 android:text="New to BoxApp? Register here"
                 android:gravity="center"
                 android:textSize="20dip"
-                android:textColor="#0b84aa"/>
+                android:textColor="#0b84aa"
+                />
 
         </LinearLayout>
         <!-- Login Form Ends -->

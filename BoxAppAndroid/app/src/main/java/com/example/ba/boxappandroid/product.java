@@ -34,7 +34,7 @@ public class product extends Activity {
 
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), list.class);
+                Intent i = new Intent(getApplicationContext(), listActivity.class);
                 startActivity(i);
 
             }

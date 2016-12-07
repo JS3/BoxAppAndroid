@@ -35,6 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onFindAddressClicked"
-            android:text="@string/find_address" />
+            android:text="@string/find_address"
+            android:background="@color/colorPrimary"/>
     </LinearLayout>
 </LinearLayout>

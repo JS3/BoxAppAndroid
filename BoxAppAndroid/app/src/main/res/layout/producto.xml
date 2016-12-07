@@ -6,7 +6,9 @@
     android:fillViewport="true">
     <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" android:background="#fff">
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light">
+
 
         <!--  Header  Starts-->
         <LinearLayout android:id="@+id/header"
@@ -83,12 +85,14 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dip"
-                android:text="Ingresar localizacion"/>
+                android:text="Ingresar localizacion"
+                android:background="@color/colorPrimary"/>/>
             <Button android:id="@+id/btnRegister"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dip"
-                android:text="Ingresar producto"/>
+                android:text="Ingresar producto"
+                android:background="@color/colorPrimary"/>/>
 
 
 
