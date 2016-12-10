@@ -25,12 +25,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp">
-
+<!--
             <ImageView
                 android:id="@+id/logo"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 tools:src="@mipmap/ipod" />
+-->
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                tools:text="Ipod"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -47,7 +57,7 @@
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:textStyle="bold" />
-
+                <!--
                 <TextView
                     android:id="@+id/shortName"
                     android:layout_width="wrap_content"
@@ -56,6 +66,7 @@
                     android:textColor="@android:color/black"
                     android:textSize="14sp" />
 
+                -->
 
             </LinearLayout>
         </LinearLayout>
