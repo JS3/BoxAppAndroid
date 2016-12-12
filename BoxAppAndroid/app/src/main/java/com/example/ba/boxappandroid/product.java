@@ -116,6 +116,16 @@ public class product extends Activity {
                 startActivity(i);
             }
         });
+
+        Button bm9 = (Button) findViewById(R.id.btnViaje);
+        bm9.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), ViajeAndroid.class);
+                startActivity(i);
+            }
+        });
         //
 
     }

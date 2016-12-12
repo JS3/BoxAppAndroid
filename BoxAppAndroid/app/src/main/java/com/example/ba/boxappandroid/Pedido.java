@@ -2,6 +2,8 @@ package com.example.ba.boxappandroid;
 
 import java.io.Serializable;
 
+import entidades.Solicitante;
+
 /**
  * Created by 2096904 on 12/3/16.
  */

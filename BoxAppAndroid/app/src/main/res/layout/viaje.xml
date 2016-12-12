@@ -54,11 +54,19 @@
         android:layout_alignRight="@+id/pApellido"
         android:layout_alignEnd="@+id/pApellido">
     </EditText>
+    <Button android:id="@+id/btningresarv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Ingresar viaje"
+        android:background="@color/colorPrimary"/>
+
     <ImageView
         android:id="@+id/ivImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/logo" />
+        android:layout_width="249dp"
+        android:layout_height="179dp"
+        android:src="@drawable/viajar"
+        android:layout_gravity="center"/>
 
 
 </LinearLayout>
