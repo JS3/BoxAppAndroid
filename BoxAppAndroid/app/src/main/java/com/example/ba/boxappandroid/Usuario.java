@@ -7,11 +7,15 @@ import java.io.Serializable;
  */
 public class Usuario implements Serializable{
 
-    private String user, password, rol;
+    private String email, user, password, rol;
+	
+	public Usuario() {
+	}
 
-    public Usuario(String user, String password, String rol) {
+    public Usuario(String email, String user, String password, String rol) {
         setUser(user);
         setPassword(password);
+		setEmail(email);
         setRol(rol);
     }
 
@@ -21,6 +25,14 @@ public class Usuario implements Serializable{
 
     public void setRol(String rol) {
         this.rol = rol;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getUser() {
