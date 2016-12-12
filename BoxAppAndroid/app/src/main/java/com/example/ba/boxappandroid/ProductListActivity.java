@@ -118,7 +118,7 @@ public class ProductListActivity extends AppCompatActivity {
         TextView textView = (TextView) vwParentRow1.getChildAt(0);
 //        System.out.println("||||||"+textView.getText().toString());
 
-        Producto p = listaProductos.get(Integer.parseInt(textView.getText().toString().charAt(0) + "") - 1);
+        Producto p = lista.get(Integer.parseInt(textView.getText().toString().charAt(0) + "") - 1);
         LinearLayout vwParentRow = (LinearLayout)v.getParent();
         Button detalles = (Button) vwParentRow.getChildAt(1);
         Intent i = new Intent(getApplicationContext(), Detalles.class);

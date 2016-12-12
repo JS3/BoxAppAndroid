@@ -1,0 +1,12 @@
+[{
+	"ubicacion": "Bodega EU",
+	"nombre": "La Torre Oscura I",
+	"descripcion": "Un libro escrito por Stephen King.",
+	"paisOrigen": "Estados Unidos",
+	"ciudadOrigen": "New York",
+	"paisDestino": "Colombia",
+	"ciudadDestino": "Bogota",
+	"peso": 1.5,
+	"delicado": false,
+	"entregado": false
+}]
