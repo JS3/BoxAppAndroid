@@ -1,9 +1,7 @@
 package entidades;
 
-import android.app.Activity;
-import android.os.Bundle;
-
 import java.io.Serializable;
+import java.util.Random;
 
 /**
  * Created by 2096904 on 12/3/16.
@@ -13,8 +11,8 @@ public class Producto implements Serializable {
 
     public final static String ORIGEN  = "ORIGEN";
     public final static String DESTINO = "DESTINO";
-
-    private Integer idProducto = 0; // Autogenerado
+    Random rand = new Random();
+    private Integer idProducto = rand.nextInt(500) + 1;; // Autogenerado
     private String ubicacion; // "ORIGEN" o "DESTINO"
     private String nombre;
     private String descripcion;
