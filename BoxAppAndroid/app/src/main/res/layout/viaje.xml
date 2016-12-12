@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light">
+
+    <TextView
+        android:text="Viajes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Titulo"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="36sp"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:layout_height="50dp"
+        android:layout_width="160dp"
+        android:hint="Origen"
+        android:id="@+id/nombreSol">
+    </EditText>
+
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:id="@+id/pApellido"
+        android:hint="Destino"
+        android:layout_toRightOf="@+id/nombre">
+    </EditText>
+
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:id="@+id/sApellido"
+        android:hint="Ida"
+        android:inputType="date"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/nombre"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </EditText>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:layout_alignBottom="@+id/sApellido"
+        android:layout_toRightOf="@+id/sApellido"
+        android:id="@+id/cedula"
+        android:hint="Llegada"
+        android:layout_alignTop="@+id/sApellido"
+        android:layout_alignRight="@+id/pApellido"
+        android:layout_alignEnd="@+id/pApellido">
+    </EditText>
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/logo" />
+
+
+</LinearLayout>
