@@ -52,6 +52,7 @@ public class ProductListActivity extends AppCompatActivity {
         executorService.execute(new Runnable() {
             @Override
             public void run() {
+//                try {
 //                    lista = network.getTeams();
                 lista = Listas.getListas().getProductos();
                     runOnUiThread(new Runnable() {
@@ -69,6 +70,9 @@ public class ProductListActivity extends AppCompatActivity {
                             recyclerView.setAdapter(new ProductoAdapter(lista));
                         }
                     });
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
             }
         });
 
