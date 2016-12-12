@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    android:background="@android:color/holo_green_light">>
+    android:background="@color/color1">>
     <EditText
         android:id="@+id/editText"
         android:layout_width="match_parent"
@@ -21,7 +21,8 @@
             android:id="@+id/btnSelectPhoto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Add Photo" />
+            android:text="Add Photo"
+            android:background="@color/colorPrimary"/>
     </LinearLayout>
 
 
