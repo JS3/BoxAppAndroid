@@ -6,7 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
+
+import java.util.prefs.Preferences;
+
+import utils.Hashing;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,8 +37,30 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), product.class);
-                startActivity(i);
+                EditText nameText = (EditText) findViewById(R.id.name);
+                EditText passText = (EditText) findViewById(R.id.pass);
+
+                String name = nameText.getText().toString();
+                String pass = passText.getText().toString();
+
+                if(!name.isEmpty() && !pass.isEmpty()) {
+                    pass = Hashing.sha1(pass);
+                    entidades.Usuario user = Listas.getListas().loginUser(name, pass);
+                    if(user != null) {
+                        Intent i = new Intent(getApplicationContext(), product.class);
+                        startActivity(i);
+                    } else {
+                        nameText.setError("No se ha encontrado el usuario ingresado.");
+                        passText.setText("");
+                    }
+                } else {
+                    if(name.isEmpty()) {
+                        nameText.setError("Debe ingresar el username o email.");
+                    }
+                    if(pass.isEmpty()) {
+                        passText.setError("Debe ingresar el password.");
+                    }
+                }
 
             }
         });
