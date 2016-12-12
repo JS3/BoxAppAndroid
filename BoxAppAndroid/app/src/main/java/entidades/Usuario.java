@@ -12,7 +12,7 @@ public class Usuario implements Serializable{
 	public Usuario() {
 	}
 
-    public Usuario(String email, String user, String password, String rol) {
+    public Usuario(String user, String email, String password, String rol) {
         setUser(user);
         setPassword(password);
 		setEmail(email);

@@ -21,4 +21,12 @@
     <string name="invalid_lat_long_used">invalid lat long used</string>
     <string name="title_activity_maps">title_activity_maps</string>
     <string name="detalles">Detalles</string>
+    <string name="name">Username or Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signUp">New to BoxApp? Register here</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="register_new_account">Register New Account</string>
+    <string name="already_has_account">Already has account! Login here</string>
 </resources>
