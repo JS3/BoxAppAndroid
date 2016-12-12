@@ -18,7 +18,7 @@ public class Listas {
     private entidades.Mensajero mensajero;
     private List<entidades.Producto> productos;
 
-    private Listas listas = null;
+    private static Listas listas = null;
 
     private Listas(){
         this.solicitante = null;
@@ -26,7 +26,7 @@ public class Listas {
         this.productos = new ArrayList<>();
     }
 
-    public Listas getListas() {
+    public static Listas getListas() {
         if (listas == null) listas = new Listas();
         return listas;
     }
@@ -53,5 +53,13 @@ public class Listas {
 
     public void setProductos(List<Producto> productos) {
         this.productos = productos;
+    }
+
+    public void addProducto(entidades.Producto p){
+        productos.add(p);
+    }
+
+    public void addSolicitante(entidades.Solicitante s){
+        solicitante = s;
     }
 }
