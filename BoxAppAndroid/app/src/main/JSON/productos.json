@@ -1,5 +1,5 @@
 [{
-	"ubicacion": "Bodega EU",
+	"ubicacion": "ORIGEN",
 	"nombre": "La Torre Oscura I",
 	"descripcion": "Un libro escrito por Stephen King.",
 	"paisOrigen": "Estados Unidos",
@@ -11,7 +11,7 @@
 	"entregado": false
 },
 {
-	"ubicacion": "Bodega EU",
+	"ubicacion": "DESTINO",
 	"nombre": "Action Man",
 	"descripcion": "Un juguete para niños.",
 	"paisOrigen": "Estados Unidos",
@@ -23,7 +23,7 @@
 	"entregado": true
 },
 {
-	"ubicacion": "Bodega EU",
+	"ubicacion": "ORIGEN",
 	"nombre": "Memoria 20GB Sony",
 	"descripcion": "Memora portatil de 20 GB de capacidad.",
 	"paisOrigen": "Estados Unidos",
@@ -35,7 +35,7 @@
 	"entregado": false
 },
 {
-	"ubicacion": "Bodega EU",
+	"ubicacion": "ORIGEN",
 	"nombre": "Tasa temperatura",
 	"descripcion": "Tasa que cambia de color con la temperatura.",
 	"paisOrigen": "Estados Unidos",
