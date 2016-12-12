@@ -5,7 +5,7 @@ package com.example.ba.boxappandroid;
  */
 import java.io.Serializable;
 import java.util.Date;
-
+import entidades.Solicitante;
 
 public class Mensajero extends Solicitante implements Serializable  {
 
