@@ -61,7 +61,7 @@ public class ProductoAdapter
         ViewHolder(View view) {
             super(view);
             name = (TextView) view.findViewById(R.id.name);
-            shortName = (TextView) view.findViewById(R.id.shortName);
+            shortName = (TextView) view.findViewById(R.id.reg_fullname);
 
         }
     }

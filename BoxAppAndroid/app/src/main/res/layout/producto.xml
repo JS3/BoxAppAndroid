@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="#372c24"
                 android:text="Nombre del producto"/>
-            <EditText android:id="@+id/reg_fullname"
+            <EditText android:id="@+id/nombreProducto"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dip"
@@ -117,7 +117,7 @@
                 android:layout_marginTop="10dip"
                 android:text="Ingresar Imagen)"
                 android:background="@color/colorPrimary"/>
-            <Button android:id="@+id/btnRegister"
+            <Button android:id="@+id/btnRegistrarProducto"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dip"

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light">>
+
+    <EditText
+        android:layout_height="50dp"
+        android:layout_width="160dp"
+        android:hint="Nombre"
+        android:id="@+id/nombreSol">
+    </EditText>
+
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:id="@+id/pApellido"
+        android:hint="Primer Apellido"
+        android:layout_toRightOf="@+id/nombre">
+    </EditText>
+
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:id="@+id/sApellido"
+        android:hint="Segundo Apellido"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/nombre"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </EditText>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_alignBottom="@+id/sApellido"
+        android:layout_toRightOf="@+id/sApellido"
+        android:id="@+id/cedula"
+        android:hint="Cédula"
+        android:layout_alignTop="@+id/sApellido"
+        android:layout_alignRight="@+id/pApellido"
+        android:layout_alignEnd="@+id/pApellido">
+    </EditText>
+
+    <RadioButton
+        android:text="Masculino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/masculino"
+        android:layout_alignBaseline="@+id/Femenino"
+        android:layout_alignBottom="@+id/Femenino"
+        android:layout_centerHorizontal="true" />
+
+    <RadioButton
+        android:text="Femenino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:id="@+id/Femenino"
+        android:layout_below="@+id/sApellido"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Género"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sApellido"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp"
+        android:id="@+id/textView3" />
+
+    <RadioButton
+        android:text="Otro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Otro"
+        android:layout_alignBaseline="@+id/masculino"
+        android:layout_alignBottom="@+id/masculino"
+        android:layout_alignRight="@+id/cedula"
+        android:layout_alignEnd="@+id/cedula" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/edad"
+        android:hint="Edad"
+        android:layout_toLeftOf="@+id/cedula"
+        android:layout_toStartOf="@+id/cedula" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:hint="Fecha Nacimiento"
+        android:layout_alignTop="@+id/edad"
+        android:id="@+id/fechaNac"
+        android:layout_alignRight="@+id/Otro"
+        android:layout_alignEnd="@+id/Otro"
+        android:layout_toRightOf="@+id/edad"
+        android:layout_toEndOf="@+id/edad" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Teléfono"
+        android:ems="10"
+        android:layout_below="@+id/edad"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/telefono"
+        android:layout_toLeftOf="@+id/fechaNac"
+        android:layout_toStartOf="@+id/fechaNac" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="Direccion"
+        android:layout_alignTop="@+id/telefono"
+        android:layout_alignRight="@+id/fechaNac"
+        android:layout_alignEnd="@+id/fechaNac"
+        android:id="@+id/direccion"
+        android:layout_toRightOf="@+id/telefono"
+        android:layout_toEndOf="@+id/telefono" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Municipio"
+        android:ems="10"
+        android:layout_alignTop="@+id/pais"
+        android:layout_alignRight="@+id/direccion"
+        android:layout_alignEnd="@+id/direccion"
+        android:id="@+id/municipio"
+        android:layout_toRightOf="@+id/pais"
+        android:layout_toEndOf="@+id/pais" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Pais"
+        android:ems="10"
+        android:layout_marginTop="11dp"
+        android:id="@+id/pais"
+        android:layout_below="@+id/telefono"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/direccion"
+        android:layout_toStartOf="@+id/direccion" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:hint="Código Postal"
+        android:ems="10"
+        android:layout_below="@+id/municipio"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/codigoPostal"
+        android:layout_toLeftOf="@+id/municipio"
+        android:layout_toStartOf="@+id/municipio" />
+
+    <Button
+        android:text="terminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/codigoPostal"
+        android:layout_alignRight="@+id/municipio"
+        android:layout_alignEnd="@+id/municipio"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:id="@+id/okRegSolicitante" />
+
+</LinearLayout>
