@@ -11,12 +11,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.example.ba.boxappandroid.R;
-import com.example.ba.boxappandroid.ProductoAdapter;
-import com.example.ba.boxappandroid.Producto;
-import com.example.ba.boxappandroid.Network;
-
-import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -41,37 +35,37 @@ public class list
         setContentView( R.layout.list );
         configureRecyclerView();
 
-        try
-        {
-            teams = network.getTeams();
-        }
-        catch ( IOException e )
-        {
-            e.printStackTrace();
-        }
-        executorService.execute( new Runnable()
-        {
-            @Override
-            public void run()
-            {
-                try
-                {
-                    teams = network.getTeams();
-                    runOnUiThread( new Runnable()
-                    {
-                        @Override
-                        public void run()
-                        {
-                            recyclerView.setAdapter( new ProductoAdapter( teams ) );
-                        }
-                    } );
-                }
-                catch ( IOException e )
-                {
-                    e.printStackTrace();
-                }
-            }
-        } );
+//        try
+//        {
+//            teams = network.getTeams();
+//        }
+//        catch ( IOException e )
+//        {
+//            e.printStackTrace();
+//        }
+//        executorService.execute( new Runnable()
+//        {
+//            @Override
+//            public void run()
+//            {
+//                try
+//                {
+//                    teams = network.getTeams();
+//                    runOnUiThread( new Runnable()
+//                    {
+//                        @Override
+//                        public void run()
+//                        {
+//                            recyclerView.setAdapter( new ProductoAdapter( teams ) );
+//                        }
+//                    } );
+//                }
+//                catch ( IOException e )
+//                {
+//                    e.printStackTrace();
+//                }
+//            }
+//        } );
 
 
     }

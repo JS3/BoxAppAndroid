@@ -6,8 +6,6 @@ package com.example.ba.boxappandroid;
 
 import android.util.Log;
 
-import com.example.ba.boxappandroid.Producto;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -31,8 +29,8 @@ public class Network
 
     public Network()
     {
-        Retrofit retrofit = new Retrofit.Builder().baseUrl(
-                "https://raw.githubusercontent.com/JS3/BoxAppAndroid/master/BoxAppAndroid" ).
+        Retrofit retrofit = new Retrofit.Builder().
+                baseUrl("https://raw.githubusercontent.com/JS3/BoxAppAndroid/feature_pendientes/BoxAppAndroid/app/src/main/JSON/" ).
                 addConverterFactory(GsonConverterFactory.create() ).build();
         service = retrofit.create( ProductService.class );
     }
@@ -71,11 +69,9 @@ public class Network
         return teams;
     }
 
-    public List<Producto> getTeams()
-            throws IOException
-    {
-        Call<List<Producto>> call = service.listTeams();
-        Response<List<Producto>> response = call.execute();
+    public List<entidades.Producto> getTeams() throws IOException{
+        Call<List<entidades.Producto>> call = service.listTeams();
+        Response<List<entidades.Producto>> response = call.execute();
         return response.body();
     }
 }

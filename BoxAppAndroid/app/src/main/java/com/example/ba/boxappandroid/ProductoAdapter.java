@@ -9,12 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.example.ba.boxappandroid.R;
-import com.example.ba.boxappandroid.Producto;
-import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -61,7 +56,7 @@ public class ProductoAdapter
         ViewHolder(View view) {
             super(view);
             name = (TextView) view.findViewById(R.id.name);
-            shortName = (TextView) view.findViewById(R.id.reg_fullname);
+//            shortName = (TextView) view.findViewById(R.id.shortName);
 
         }
     }

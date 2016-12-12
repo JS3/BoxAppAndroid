@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
@@ -28,6 +29,7 @@ public class ProductListActivity extends AppCompatActivity {
     List<Producto> listaProductosEntregados = new ArrayList<>();
     List<Producto> lista = new ArrayList<>();
     ExecutorService executorService = Executors.newFixedThreadPool(1);
+    Network network = new Network();
     RecyclerView recyclerView;
     Boolean ordPendiente;
     Boolean ordEntregado;
@@ -36,10 +38,6 @@ public class ProductListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recycler_view_layout);
-
-        configurarlistaProductos();
-        configurarlistaProductosPendientes();
-        configurarlistaProductosEntregados();
 
         Intent intent = getIntent();
 
@@ -51,42 +49,33 @@ public class ProductListActivity extends AppCompatActivity {
         if(ordEntregado == null)
             ordEntregado = false;
 
-
         executorService.execute(new Runnable() {
             @Override
             public void run() {
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        lista = listaProductos;
+                try {
+                    lista = network.getTeams();
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            listaProductos = lista;
+                            configurarlistaProductosPendientes();
+                            configurarlistaProductosEntregados();
 
-                        if(ordPendiente)
-                            lista = listaProductosPendientes;
+                            if(ordPendiente)
+                                lista = listaProductosPendientes;
 
-                        if(ordEntregado)
-                            lista = listaProductosEntregados;
-
-                        recyclerView.setAdapter(new ProductoAdapter(lista));
-                    }
-                });
+                            if(ordEntregado)
+                                lista = listaProductosEntregados;
+                            recyclerView.setAdapter(new ProductoAdapter(lista));
+                        }
+                    });
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         });
 
         configureRecyclerView();
-
-    }
-
-
-    private void configurarlistaProductos(){
-
-//        listaProductos.add(new Producto("Ubicación A", "Libro", "Un libro cuadrado",
-//                "EU", "NY", "Colombia",
-//                "Bogota", 1.5, false,
-//                false));
-//                // false));
-//        listaProductos.add(new Producto("USB", false));
-//        listaProductos.add(new Producto("Cables", true));
-//        listaProductos.add(new Producto("Juguete", false));
     }
 
     private void configurarlistaProductosPendientes(){
