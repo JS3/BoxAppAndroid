@@ -73,27 +73,6 @@ public class ProductListActivity extends AppCompatActivity {
         });
 
         configureRecyclerView();
-
-//        LayoutInflater factory = getLayoutInflater();
-//        View layout = factory.inflate(R.layout.product_row,null);
-//        layout.setFocusable(true);
-//        Button detalles = (Button) layout.findViewById(R.id.detalles);
-//        System.out.println("|||");
-//        detalles.setText("aaaaa");
-//        TextView textView = new TextView(this);
-//        textView.setText("Mensaje");
-//        ViewGroup layout = (ViewGroup) findViewById(R.id.product_row);
-//        Button detalles = (Button) findViewById(R.id.detalles);
-////        System.out.println("|||"+layout+"|||"+detalles);
-//        detalles.setOnClickListener(new View.OnClickListener() {
-//
-//            @Override
-//            public void onClick(View v) {
-//                Intent i = new Intent(getApplicationContext(), Detalles.class);
-//                i.putExtra("PRODUCTO", listaProductos.get(0));
-//                startActivity(i);
-//            }
-//        });
     }
 
 

@@ -1,8 +1,5 @@
 package entidades;
 
-import android.app.Activity;
-import android.os.Bundle;
-
 import java.io.Serializable;
 
 /**
@@ -29,7 +26,10 @@ public class Producto implements Serializable {
     public Producto() {
     }
 
-    public Producto(String ubicacion, String nombre, String descripcion, String paisOrigen, String ciudadOrigen, String paisDestino, String ciudadDestino, Double peso, Boolean delicado, Boolean entregado) {
+    public Producto(String ubicacion, String nombre, String descripcion,
+                    String paisOrigen, String ciudadOrigen, String paisDestino,
+                    String ciudadDestino, Double peso, Boolean delicado,
+                    Boolean entregado) {
         this.ubicacion = ubicacion;
         this.nombre = nombre;
         this.descripcion = descripcion;
@@ -135,5 +135,10 @@ public class Producto implements Serializable {
         this.entregado = entregado;
     }
 
+    //MSTRJL
+    public Producto(String nombre, Boolean entregado){
+        this.nombre = nombre;
+        this.entregado = entregado;
+    }
 }
 

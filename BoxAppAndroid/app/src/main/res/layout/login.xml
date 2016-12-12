@@ -74,8 +74,33 @@
                 android:textColor="#0b84aa"
                 />
 
-        </LinearLayout>
-        <!-- Login Form Ends -->
+            <!--
+
+            MSTRJL
+            Buton para ver todos los productos
+
+            -->
+            <Button android:id="@+id/btnProductos"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="Productos"
+                android:background="@color/colorPrimary"/>
+            <Button android:id="@+id/btnProductosPendientes"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="Productos Pendientes"
+                android:background="@color/colorPrimary"/>
+            <Button android:id="@+id/btnProductosEntregados"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="Productos Entregados"
+                android:background="@color/colorPrimary"/>
+            <!---->
+    </LinearLayout>
+    <!-- Login Form Ends -->
     </RelativeLayout>
 </ScrollView>
 

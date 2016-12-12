@@ -8,6 +8,7 @@ import android.widget.Button;
 
 /**
  * Created by 2096904 on 12/5/16.
+ * Esta clase se encarga de implementar los inputs para agregar un producto.
  */
 
 public class product extends Activity {
@@ -36,7 +37,6 @@ public class product extends Activity {
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), listActivity.class);
                 startActivity(i);
-
             }
         });
         Button bm5 = (Button) findViewById(R.id.btnimagen);

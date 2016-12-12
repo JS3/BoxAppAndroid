@@ -14,6 +14,7 @@ public class Producto
 
     private String destino;
 
+
     public Producto()
     {
     }
@@ -46,5 +47,21 @@ public class Producto
     public String getdestino()
     {
         return destino;
+    }
+
+//MSTRJL Un nuevo constructor para probar funciones
+
+    public boolean isEntregado() {
+        return entregado;
+    }
+
+    public void setEntregado(boolean entregado) {
+        this.entregado = entregado;
+    }
+
+    private boolean entregado = false;
+
+    public Producto(String nombre){
+        this.nombre = nombre;
     }
 }

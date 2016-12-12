@@ -11,15 +11,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.example.ba.boxappandroid.R;
-import com.example.ba.boxappandroid.ProductoAdapter;
-import com.example.ba.boxappandroid.Producto;
-import com.example.ba.boxappandroid.Network;
-
 import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+
+import Adapter.TeamsAdapter;
 
 
 public class list
@@ -62,7 +59,7 @@ public class list
                         @Override
                         public void run()
                         {
-                            recyclerView.setAdapter( new ProductoAdapter( teams ) );
+                            recyclerView.setAdapter( new TeamsAdapter( teams ) );
                         }
                     } );
                 }
