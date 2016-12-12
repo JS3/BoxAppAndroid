@@ -32,7 +32,7 @@
     <EditText
         android:layout_width="160dp"
         android:layout_height="50dp"
-        android:id="@+id/sApellido"
+        android:id="@+id/ida"
         android:hint="Ida"
         android:inputType="date"
         android:layout_marginTop="18dp"
@@ -48,7 +48,7 @@
         android:ems="10"
         android:layout_alignBottom="@+id/sApellido"
         android:layout_toRightOf="@+id/sApellido"
-        android:id="@+id/cedula"
+        android:id="@+id/llegada"
         android:hint="Llegada"
         android:layout_alignTop="@+id/sApellido"
         android:layout_alignRight="@+id/pApellido"
