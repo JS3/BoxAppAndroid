@@ -74,39 +74,19 @@ public class ProductListActivity extends AppCompatActivity {
 
         configureRecyclerView();
 
-//        LayoutInflater factory = getLayoutInflater();
-//        View layout = factory.inflate(R.layout.product_row,null);
-//        layout.setFocusable(true);
-//        Button detalles = (Button) layout.findViewById(R.id.detalles);
-//        System.out.println("|||");
-//        detalles.setText("aaaaa");
-//        TextView textView = new TextView(this);
-//        textView.setText("Mensaje");
-//        ViewGroup layout = (ViewGroup) findViewById(R.id.product_row);
-//        Button detalles = (Button) findViewById(R.id.detalles);
-////        System.out.println("|||"+layout+"|||"+detalles);
-//        detalles.setOnClickListener(new View.OnClickListener() {
-//
-//            @Override
-//            public void onClick(View v) {
-//                Intent i = new Intent(getApplicationContext(), Detalles.class);
-//                i.putExtra("PRODUCTO", listaProductos.get(0));
-//                startActivity(i);
-//            }
-//        });
     }
 
 
     private void configurarlistaProductos(){
 
-        listaProductos.add(new Producto("Ubicación A", "Libro", "Un libro cuadrado",
-                "EU", "NY", "Colombia",
-                "Bogota", 1.5, false,
-                false));
-                // false));
-        listaProductos.add(new Producto("USB", false));
-        listaProductos.add(new Producto("Cables", true));
-        listaProductos.add(new Producto("Juguete", false));
+//        listaProductos.add(new Producto("Ubicación A", "Libro", "Un libro cuadrado",
+//                "EU", "NY", "Colombia",
+//                "Bogota", 1.5, false,
+//                false));
+//                // false));
+//        listaProductos.add(new Producto("USB", false));
+//        listaProductos.add(new Producto("Cables", true));
+//        listaProductos.add(new Producto("Juguete", false));
     }
 
     private void configurarlistaProductosPendientes(){
@@ -139,7 +119,7 @@ public class ProductListActivity extends AppCompatActivity {
         TextView textView = (TextView) vwParentRow1.getChildAt(0);
 //        System.out.println("||||||"+textView.getText().toString());
 
-        Producto p = listaProductos.get(Integer.parseInt(textView.getText().toString().charAt(0) + "") - 1);
+        Producto p = lista.get(Integer.parseInt(textView.getText().toString().charAt(0) + "") - 1);
         LinearLayout vwParentRow = (LinearLayout)v.getParent();
         Button detalles = (Button) vwParentRow.getChildAt(1);
         Intent i = new Intent(getApplicationContext(), Detalles.class);
