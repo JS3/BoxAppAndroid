@@ -36,7 +36,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".listActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -59,9 +58,12 @@
             </intent-filter>
         </activity>
 
-        <!--MSTRJL-->
-        <activity android:name=".ProductListActivity"></activity>
-        <activity android:name=".Detalles"></activity>
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".SolicitanteActivity" />
+
+        <!-- MSTRJL -->
+        <activity android:name=".ProductListActivity" />
+        <activity android:name=".Detalles" />
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -73,15 +75,12 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key"
-
-           />
-
-
+            android:value="@string/google_maps_key" />
 
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".MenuActivity"></activity>
     </application>
 
 </manifest>

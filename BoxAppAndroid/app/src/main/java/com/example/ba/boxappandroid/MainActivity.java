@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                EditText nameText = (EditText) findViewById(R.id.name);
-                EditText passText = (EditText) findViewById(R.id.pass);
+                final EditText nameText = (EditText) findViewById(R.id.name);
+                final EditText passText = (EditText) findViewById(R.id.pass);
 
                 String name = nameText.getText().toString();
                 String pass = passText.getText().toString();
@@ -47,7 +47,11 @@ public class MainActivity extends AppCompatActivity {
                     pass = Hashing.sha1(pass);
                     entidades.Usuario user = Listas.getListas().loginUser(name, pass);
                     if(user != null) {
-                        Intent i = new Intent(getApplicationContext(), product.class);
+                        nameText.setText("");
+                        passText.setText("");
+
+                        Intent i = new Intent(getApplicationContext(), MenuActivity.class);
+                        i.putExtra(MenuActivity.EXTRA_MESSAGE, user);
                         startActivity(i);
                     } else {
                         nameText.setError("No se ha encontrado el usuario ingresado.");

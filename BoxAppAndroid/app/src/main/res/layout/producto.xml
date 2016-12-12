@@ -123,33 +123,6 @@
                 android:layout_marginTop="10dip"
                 android:text="Ingresar producto"
                 android:background="@color/colorPrimary"/>
-            <!-- MSTRJL -->
-            <Button android:id="@+id/btnProductos"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dip"
-                android:text="Productos"
-                android:background="@color/colorPrimary"/>
-            <Button android:id="@+id/btnProductosPendientes"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dip"
-                android:text="Productos Pendientes"
-                android:background="@color/colorPrimary"/>
-            <Button android:id="@+id/btnProductosEntregados"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dip"
-                android:text="Productos Entregados"
-                android:background="@color/colorPrimary"/>
-            <Button android:id="@+id/btnViaje"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dip"
-                android:text="Ingresar viaje"
-                android:background="@color/colorPrimary"/>
-
-            <!-- MSTRJL -->
         </LinearLayout>
         <!-- Registration Form Ends -->
     </RelativeLayout>

@@ -29,4 +29,11 @@
     <string name="email">Email</string>
     <string name="register_new_account">Register New Account</string>
     <string name="already_has_account">Already has account! Login here</string>
+    <string name="registrarse_como_solicitante">Registrarse como solicitante</string>
+    <string name="registrar_un_producto">Registrar un producto</string>
+    <string name="ver_los_productos">Ver los Productos</string>
+    <string name="ver_los_productos_pendientes">Ver los Productos Pendientes</string>
+    <string name="ver_los_productos_entregados">Ver los Productos Entregados</string>
+    <string name="ingresar_viaje">Ingresar viaje</string>
+    <string name="logout">Cerrar Sesión</string>
 </resources>

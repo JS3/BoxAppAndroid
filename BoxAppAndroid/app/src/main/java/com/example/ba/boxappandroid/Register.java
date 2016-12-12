@@ -41,9 +41,9 @@ public class Register extends Activity {
 
             @Override
             public void onClick(View v) {
-                EditText usernameText = (EditText) findViewById(R.id.reg_fullname);
-                EditText emailText = (EditText) findViewById(R.id.reg_email);
-                EditText passText = (EditText) findViewById(R.id.reg_password);
+                final EditText usernameText = (EditText) findViewById(R.id.reg_fullname);
+                final EditText emailText = (EditText) findViewById(R.id.reg_email);
+                final EditText passText = (EditText) findViewById(R.id.reg_password);
 
                 String username = usernameText.getText().toString();
                 String email = emailText.getText().toString();
@@ -66,7 +66,11 @@ public class Register extends Activity {
                             alert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
-                                    Intent i = new Intent(getApplicationContext(), product.class);
+                                    usernameText.setText("");
+                                    emailText.setText("");
+                                    passText.setText("");
+
+                                    Intent i = new Intent(getApplicationContext(), MenuActivity.class);
                                     startActivity(i);
                                 }
                             });
