@@ -14,7 +14,7 @@
         <LinearLayout android:id="@+id/header"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-
+            android:orientation="vertical"
             android:paddingTop="5dip"
             android:paddingBottom="5dip">
             <!-- Logo Start-->
@@ -115,7 +115,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dip"
-                android:text="Ingresar Imagen)"
+                android:text="Ingresar Imagen"
                 android:background="@color/colorPrimary"/>
             <Button android:id="@+id/btnRegistrarProducto"
                 android:layout_width="fill_parent"
