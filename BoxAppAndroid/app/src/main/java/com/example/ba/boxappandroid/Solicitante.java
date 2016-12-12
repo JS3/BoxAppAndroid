@@ -5,10 +5,6 @@ package com.example.ba.boxappandroid;
  */
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-
-import java.util.Date;
 
 /**
  * Created by PILAR on 11/12/2016.
@@ -20,17 +16,17 @@ public class Solicitante extends Activity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.producto);
-        Button botonSol = (Button) findViewById(R.id.okRegSolicitante);
-
-
-        botonSol.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                entidades.Solicitante solicitante = new entidades.Solicitante(3, "Manolo", "Martínez", "Suarez", 1043567625, 23,
-                        new Date(87767576), 6786543, "Calle falsa con barrio falso", "Colombia", "Cundinamarca",
-                        111111);
-            }
-        });
+//        Button botonSol = (Button) findViewById(R.id.okRegSolicitante);
+//
+//
+//        botonSol.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View v){
+//                entidades.Solicitante solicitante = new entidades.Solicitante(3, "Manolo", "Martínez", "Suarez", 1043567625, 23,
+//                        new Date(87767576), 6786543, "Calle falsa con barrio falso", "Colombia", "Cundinamarca",
+//                        111111);
+//            }
+//        });
     }
 
 }

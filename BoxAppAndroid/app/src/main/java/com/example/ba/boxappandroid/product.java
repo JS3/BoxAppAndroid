@@ -53,5 +53,42 @@ public class product extends Activity {
             }
         });
 
+        //MSTRJL
+        Button bm6 = (Button) findViewById(R.id.btnProductos);
+
+        bm6.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), ProductListActivity.class);
+                startActivity(i);
+            }
+        });
+
+        Button bm7 = (Button) findViewById(R.id.btnProductosPendientes);
+
+        bm7.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), ProductListActivity.class);
+                i.putExtra("ORDENA_POR_PENDIENTES", true);
+                startActivity(i);
+            }
+        });
+
+        Button bm8 = (Button) findViewById(R.id.btnProductosEntregados);
+
+        bm8.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), ProductListActivity.class);
+                i.putExtra("ORDENA_POR_ENTREGADOS", true);
+                startActivity(i);
+            }
+        });
+        //
+
     }
 }
