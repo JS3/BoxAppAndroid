@@ -9,4 +9,40 @@
 	"peso": 1.5,
 	"delicado": false,
 	"entregado": false
+},
+{
+	"ubicacion": "Bodega EU",
+	"nombre": "Action Man",
+	"descripcion": "Un juguete para niños.",
+	"paisOrigen": "Estados Unidos",
+	"ciudadOrigen": "California",
+	"paisDestino": "Colombia",
+	"ciudadDestino": "Bogota",
+	"peso": 1.2,
+	"delicado": false,
+	"entregado": true
+},
+{
+	"ubicacion": "Bodega EU",
+	"nombre": "Memoria 20GB Sony",
+	"descripcion": "Memora portatil de 20 GB de capacidad.",
+	"paisOrigen": "Estados Unidos",
+	"ciudadOrigen": "California",
+	"paisDestino": "Colombia",
+	"ciudadDestino": "Bogota",
+	"peso": 0.2,
+	"delicado": false,
+	"entregado": false
+},
+{
+	"ubicacion": "Bodega EU",
+	"nombre": "Tasa temperatura",
+	"descripcion": "Tasa que cambia de color con la temperatura.",
+	"paisOrigen": "Estados Unidos",
+	"ciudadOrigen": "New York",
+	"paisDestino": "Colombia",
+	"ciudadDestino": "Bogota",
+	"peso": 1,
+	"delicado": true,
+	"entregado": false
 }]
