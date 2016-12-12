@@ -6,20 +6,18 @@
     android:fillViewport="true">
     <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" android:background="@android:color/holo_green_light">>
+        android:layout_height="wrap_content" android:background="@drawable/avion">>
 
         <!--  Header  Starts-->
         <LinearLayout android:id="@+id/header"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
 
             android:paddingTop="5dip"
             android:paddingBottom="5dip">
             <!-- Logo Start-->
-            <ImageView android:src="@mipmap/logo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="100dip"/>
+
             <!-- Logo Ends -->
         </LinearLayout>
         <!--  Header Ends -->
