@@ -34,8 +34,10 @@ public class product extends Activity {
 
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), listActivity.class);
-                startActivity(i);
+//                findViewById(R.id.reg_fullname);
+
+//                Intent i = new Intent(getApplicationContext(), listActivity.class);
+//                startActivity(i);
 
             }
         });

@@ -18,10 +18,10 @@
             android:paddingTop="5dip"
             android:paddingBottom="5dip">
             <!-- Logo Start-->
-            <ImageView android:src="@mipmap/logo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dip"/>
+            <!--<ImageView android:src="@mipmap/logo"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dip"/>-->
             <!-- Logo Ends -->
         </LinearLayout>
         <!--  Header Ends -->
@@ -41,46 +41,70 @@
             <TextView android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#372c24"
-                android:text="Nombre"/>
+                android:text="Nombre del producto"/>
             <EditText android:id="@+id/reg_fullname"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dip"
-                android:singleLine="true"
                 android:layout_marginBottom="20dip"/>
-            <!--  Email Label -->
+                <!--android:singleLine="true"-->
+
+            <!--  PESO -->
             <TextView android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#372c24"
-                android:text="Peso"/>
+                android:text="Peso en libras del producto"/>
             <EditText android:id="@+id/peso"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dip"
-                android:singleLine="true"
+                android:inputType="numberDecimal"
                 android:layout_marginBottom="20dip"/>
-            <!-- Password Label -->
+                <!--android:singleLine="true"-->
+
+            <!-- ORIGEN -->
             <TextView android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#372c24"
-                android:text="Origen"/>
+                android:text="Pais de Origen"/>
             <EditText android:id="@+id/origen"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:password="true"
-                android:singleLine="true"
                 android:layout_marginTop="5dip"/>
+
             <TextView android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#372c24"
-                android:text="Destino"/>
+                android:text="Ciudad de Origen"/>
+            <EditText android:id="@+id/origenCiudad"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"/>
+                <!--android:password="true"-->
+                <!--android:singleLine="true"/>-->
+
+            <!--DESTINO-->
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Pais de Destino"/>
             <EditText android:id="@+id/destino"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:password="true"
-                android:singleLine="true"
                 android:layout_marginTop="5dip"/>
-            <!-- Register Button -->
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Ciudad de Destino"/>
+            <EditText android:id="@+id/destinoCiudad"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"/>
+                <!--android:password="true"-->
+                <!--android:singleLine="true"/>-->
+
+            <!-- BOTONES -->
             <Button android:id="@+id/btnlocalizar"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
