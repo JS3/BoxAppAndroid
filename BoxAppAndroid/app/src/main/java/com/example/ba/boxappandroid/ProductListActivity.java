@@ -10,7 +10,6 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
@@ -18,6 +17,7 @@ import java.util.concurrent.Executors;
 
 import Adapter.ProductoAdapter;
 import entidades.Producto;
+
 /**
  * Created by MSTRJL on 9/12/16.
  */
@@ -52,8 +52,9 @@ public class ProductListActivity extends AppCompatActivity {
         executorService.execute(new Runnable() {
             @Override
             public void run() {
-                try {
-                    lista = network.getTeams();
+//                try {
+//                    lista = network.getTeams();
+                lista = Listas.getListas().getProductos();
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
@@ -69,9 +70,9 @@ public class ProductListActivity extends AppCompatActivity {
                             recyclerView.setAdapter(new ProductoAdapter(lista));
                         }
                     });
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
             }
         });
 
