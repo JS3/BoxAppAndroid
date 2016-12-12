@@ -54,6 +54,7 @@
 
         <!--MSTRJL-->
         <activity android:name=".ProductListActivity"></activity>
+        <activity android:name=".Detalles"></activity>
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.

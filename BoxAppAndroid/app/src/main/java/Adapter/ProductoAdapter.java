@@ -61,6 +61,7 @@ public class ProductoAdapter
             super(view);
             name = (TextView) view.findViewById(R.id.name);
             number = (TextView) view.findViewById(R.id.number);
+
 //            shortName = (TextView) view.findViewById(R.id.shortName);
         }
     }
