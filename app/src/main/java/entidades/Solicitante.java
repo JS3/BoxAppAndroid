@@ -141,4 +141,10 @@ public class Solicitante implements Serializable{
     }
 
     public int getCodigoPostal() { return codigoPostal; }
+
+//MSTRJL
+    public Solicitante(int idSolicitante, String nombre){
+        this.idSolicitante = idSolicitante;
+        this.nombre = nombre;
+    }
 }

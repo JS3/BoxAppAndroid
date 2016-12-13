@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:id="@+id/LinearLayout1">
 
 
     <TextView
@@ -115,9 +116,14 @@
         </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:orientation="horizontal"
+    <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:text="Entregar"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:visibility="invisible"/>
+        <!--android:visibility="invisible"-->
 </LinearLayout>

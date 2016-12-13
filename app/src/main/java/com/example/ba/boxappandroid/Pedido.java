@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 import entidades.Solicitante;
 
+import entidades.Producto;
+
 /**
  * Created by 2096904 on 12/3/16.
  */
@@ -17,6 +19,7 @@ public class Pedido implements Serializable{
     private Solicitante solicitante;
     private Mensajero mensajero;
     private Viaje viaje;
+
     private String estado = ESPERA;
 
     private Producto producto;
@@ -71,5 +74,13 @@ public class Pedido implements Serializable{
 
     public void setProducto(Producto producto) {
         this.producto = producto;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 }
