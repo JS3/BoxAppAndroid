@@ -62,6 +62,14 @@
         <!--MSTRJL-->
         <activity android:name=".ProductListActivity"></activity>
         <activity android:name=".Detalles"></activity>
+        <activity android:name="recoleccion.RecoleccionActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Lo puse en un nuevo paquete para que fuese más facil de localizar. -->
+        <!--MSTRJL-->
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.

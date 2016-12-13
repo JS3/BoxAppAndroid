@@ -9,15 +9,28 @@ import entidades.Solicitante;
  */
 public class Pedido implements Serializable{
 
+    public final static String ESPERA  = "Espera";
+    public final static String ENVIANDO = "Enviando";
+    public final static String ENTREGANDO = "Entregando";
+
     private Integer codigoPedido = 0;
     private Solicitante solicitante;
     private Mensajero mensajero;
     private Viaje viaje;
+    private String estado = ESPERA;
 
-    public Pedido(Solicitante solicitante, Mensajero mensajero, Viaje viaje) {
+    private Producto producto;
+
+    public Pedido(Solicitante solicitante, Producto producto) {
+        this.solicitante = solicitante;
+        this.producto = producto;
+    }
+
+    public Pedido(Solicitante solicitante, Mensajero mensajero, Viaje viaje, Producto producto) {
         this.solicitante = solicitante;
         this.mensajero = mensajero;
         this.viaje = viaje;
+        this.producto = producto;
     }
 
     public Integer getCodigoPedido() {
@@ -50,5 +63,13 @@ public class Pedido implements Serializable{
 
     public void setViaje(Viaje viaje) {
         this.viaje = viaje;
+    }
+
+    public Producto getProducto() {
+        return producto;
+    }
+
+    public void setProducto(Producto producto) {
+        this.producto = producto;
     }
 }
