@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color1"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/nombreSol"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:hint="Nombre"></EditText>
+
+        <EditText
+            android:id="@+id/pApellido"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/nombre"
+            android:hint="Primer Apellido"></EditText>
+
+        <EditText
+            android:id="@+id/sApellido"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/nombre"
+            android:layout_marginTop="18dp"
+            android:hint="Segundo Apellido"></EditText>
+
+        <EditText
+            android:id="@+id/cedula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/sApellido"
+            android:layout_alignEnd="@+id/pApellido"
+            android:layout_alignRight="@+id/pApellido"
+            android:layout_alignTop="@+id/sApellido"
+            android:layout_toRightOf="@+id/sApellido"
+            android:ems="10"
+            android:hint="Cédula"
+            android:inputType="number"></EditText>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/sApellido"
+            android:layout_marginTop="13dp"
+            android:text="Género" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/masculino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Femenino"
+                android:layout_alignBottom="@+id/Femenino"
+                android:layout_centerHorizontal="true"
+                android:text="Masculino" />
+
+            <RadioButton
+                android:id="@+id/Femenino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/sApellido"
+                android:text="Femenino" />
+
+            <RadioButton
+                android:id="@+id/Otro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/masculino"
+                android:layout_alignBottom="@+id/masculino"
+                android:layout_alignEnd="@+id/cedula"
+                android:layout_alignRight="@+id/cedula"
+                android:text="Otro" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/edad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/cedula"
+            android:layout_toStartOf="@+id/cedula"
+            android:ems="10"
+            android:hint="Edad"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/fechaNac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/Otro"
+            android:layout_alignRight="@+id/Otro"
+            android:layout_alignTop="@+id/edad"
+            android:layout_toEndOf="@+id/edad"
+            android:layout_toRightOf="@+id/edad"
+            android:ems="10"
+            android:hint="Fecha Nacimiento"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/edad"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/fechaNac"
+            android:layout_toStartOf="@+id/fechaNac"
+            android:ems="10"
+            android:hint="Teléfono"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/direccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/fechaNac"
+            android:layout_alignRight="@+id/fechaNac"
+            android:layout_alignTop="@+id/telefono"
+            android:layout_toEndOf="@+id/telefono"
+            android:layout_toRightOf="@+id/telefono"
+            android:ems="10"
+            android:hint="Direccion"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/municipio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/direccion"
+            android:layout_alignRight="@+id/direccion"
+            android:layout_alignTop="@+id/pais"
+            android:layout_toEndOf="@+id/pais"
+            android:layout_toRightOf="@+id/pais"
+            android:ems="10"
+            android:hint="Municipio"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/pais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/telefono"
+            android:layout_marginTop="11dp"
+            android:layout_toLeftOf="@+id/direccion"
+            android:layout_toStartOf="@+id/direccion"
+            android:ems="10"
+            android:hint="Pais"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/codigoPostal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/municipio"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/municipio"
+            android:layout_toStartOf="@+id/municipio"
+            android:ems="10"
+            android:hint="Código Postal"
+            android:inputType="textPostalAddress" />
+
+        <Button
+            android:id="@+id/okRegSolicitante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/municipio"
+            android:layout_alignRight="@+id/municipio"
+            android:layout_below="@+id/codigoPostal"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:text="terminar"
+            android:background="@color/colorPrimary"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">BoxApp</string>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_user">UserActivity</string>
+    <string name="login_text">Login Page</string>
+    <string name="username_text">User Name</string>
+    <string name="password_text">Password</string>
+    <string name="attempt_text">Attempt</string>
+    <string name="button_login_text">Login</string>
+    <string name="screen_page_text">Welcome  to the second page</string>
+
+    <string name="find_address">Find Address</string>
+    <string name="address">Address</string>
+    <string name="no_location_data_provided">No location data provided</string>
+    <string name="no_address_found">no address found</string>
+    <string name="address_found">address found</string>
+    <string name="service_not_available">service not available</string>
+    <string name="invalid_lat_long_used">invalid lat long used</string>
+    <string name="title_activity_maps">title_activity_maps</string>
+    <string name="detalles">Detalles</string>
+    <string name="name">Username or Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signUp">New to BoxApp? Register here</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="register_new_account">Register New Account</string>
+    <string name="already_has_account">Already has account! Login here</string>
+    <string name="registrarse_como_solicitante">Registrarse como solicitante</string>
+    <string name="registrar_un_producto">Registrar un producto</string>
+    <string name="ver_los_productos">Ver los Productos</string>
+    <string name="ver_los_productos_pendientes">Ver los Productos Pendientes</string>
+    <string name="ver_los_productos_entregados">Ver los Productos Entregados</string>
+    <string name="ingresar_viaje">Ingresar viaje</string>
+    <string name="logout">Cerrar Sesión</string>
+</resources>
