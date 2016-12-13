@@ -58,7 +58,8 @@ public class Register extends Activity {
                             pass = Hashing.sha1(pass);
                             String rolUser = "USER";
 
-                            Listas.getListas().addUser(new entidades.Usuario(email, username, pass, rolUser));
+                            final entidades.Usuario user = new entidades.Usuario(email, username, pass, rolUser);
+                            Listas.getListas().addUser(user);
 
                             AlertDialog.Builder alert = new AlertDialog.Builder(Register.this);
                             alert.setTitle("Has sido registrado correctamente");
@@ -71,6 +72,7 @@ public class Register extends Activity {
                                     passText.setText("");
 
                                     Intent i = new Intent(getApplicationContext(), MenuActivity.class);
+                                    i.putExtra(MenuActivity.EXTRA_MESSAGE, user);
                                     startActivity(i);
                                 }
                             });

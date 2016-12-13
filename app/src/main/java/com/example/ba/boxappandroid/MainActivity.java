@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if(!name.isEmpty() && !pass.isEmpty()) {
                     pass = Hashing.sha1(pass);
-                    entidades.Usuario user = Listas.getListas().loginUser(name, pass);
+                    final entidades.Usuario user = Listas.getListas().loginUser(name, pass);
                     if(user != null) {
                         nameText.setText("");
                         passText.setText("");
