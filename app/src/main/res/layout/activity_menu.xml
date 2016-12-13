@@ -80,6 +80,15 @@
             android:background="@color/colorPrimary"
             android:onClick="goToIngresarViaje"
             android:text="@string/ingresar_viaje" />
+
+        <Button
+            android:id="@+id/btnRec"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@color/colorPrimary"
+            android:onClick="goToRecoleccion"
+            android:text="Recolectar un pedido" />
         <!-- MSTRJL -->
 
         <Button
