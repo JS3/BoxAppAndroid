@@ -80,7 +80,7 @@
                 android:orientation="vertical"
                 android:layout_width="127dp"
                 android:layout_height="wrap_content">
-
+ViajeAndroid
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

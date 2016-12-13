@@ -152,7 +152,7 @@ public class RecoleccionActivity extends AppCompatActivity {
 
     public void configurarInformacion(){
         nombreProducto.setText(lista.get(0).getProducto().getNombre());
-        peso.setText(lista.get(0).getProducto().getPeso().toString()+"libras");
+        peso.setText(lista.get(0).getProducto().getPeso().toString()+" libras");
         origen.setText(lista.get(0).getProducto().getPaisOrigen()+"/"+lista.get(0).getProducto().getCiudadOrigen());
         destino.setText(lista.get(0).getProducto().getPaisDestino()+"/"+lista.get(0).getProducto().getCiudadDestino());
     }
