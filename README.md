@@ -1,4 +1,4 @@
-# BoxAppAndroid
+# BoxApp Android
 
 Aplicación móvil BoxApp para la asignatura COSW - Construcción de Software.
 
