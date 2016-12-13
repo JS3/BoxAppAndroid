@@ -18,13 +18,13 @@
         android:layout_height="50dp"
         android:layout_width="160dp"
         android:hint="Origen"
-        android:id="@+id/nombreSol">
+        android:id="@+id/Origen">
     </EditText>
 
     <EditText
         android:layout_width="160dp"
         android:layout_height="50dp"
-        android:id="@+id/pApellido"
+        android:id="@+id/Destino"
         android:hint="Destino"
         android:layout_toRightOf="@+id/nombre">
     </EditText>
@@ -32,7 +32,7 @@
     <EditText
         android:layout_width="160dp"
         android:layout_height="50dp"
-        android:id="@+id/ida"
+        android:id="@+id/Ida"
         android:hint="Ida"
         android:inputType="date"
         android:layout_marginTop="18dp"
@@ -48,7 +48,7 @@
         android:ems="10"
         android:layout_alignBottom="@+id/sApellido"
         android:layout_toRightOf="@+id/sApellido"
-        android:id="@+id/llegada"
+        android:id="@+id/Llegada"
         android:hint="Llegada"
         android:layout_alignTop="@+id/sApellido"
         android:layout_alignRight="@+id/pApellido"

@@ -1,6 +1,7 @@
 package com.example.ba.boxappandroid;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,10 +23,10 @@ public class ViajeAndroid extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.viaje);
-        origen = (EditText) findViewById(R.id.origen);
-        destino = (EditText) findViewById(R.id.destino);
-        ida = (EditText) findViewById(R.id.ida);
-        llegada = (EditText) findViewById(R.id.llegada);
+        origen = (EditText) findViewById(R.id.Origen);
+        destino = (EditText) findViewById(R.id.Destino);
+        ida = (EditText) findViewById(R.id.Ida);
+        llegada = (EditText) findViewById(R.id.Llegada);
 
         {
             Button btnSelect = (Button) findViewById(R.id.btningresarv);
@@ -52,22 +53,33 @@ public class ViajeAndroid extends Activity {
                 }
     });}}
         private void postUser() {
+            AlertDialog.Builder alert = new AlertDialog.Builder(ViajeAndroid.this);
+            alert.setTitle("Listo");
+            alert.setMessage("Viaje registrado");
+            alert.setPositiveButton("OK", null);
+            alert.show();
             JSONObject json = new JSONObject();
             try {
-                json.put("name", "emil");
+                json.put("origen", origen);
             } catch (JSONException e) {
                 e.printStackTrace();
             }
             try {
-                json.put("username", "emil111");
+                json.put("destino", destino);
             } catch (JSONException e) {
                 e.printStackTrace();
             }
             try {
-                json.put("age", "111");
+                json.put("ida", ida);
             } catch (JSONException e) {
                 e.printStackTrace();
             }
+            try {
+                json.put("llegada", llegada);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
 
 }
 
